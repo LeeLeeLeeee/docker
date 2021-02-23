@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 도커 컴포즈 설정을 위한 파이썬/Django 샘플 프로젝트
 
 ### 요약
@@ -42,3 +43,7 @@ $ docker-compose up
 - compose/django/Dockerfile-dev
 
 개발용 컨테이너를 만들기 위한 Dockerfile (배포용 Dockerfile과 살짝 다름)
+=======
+# docker
+<span style='color:red'>`docker education`</span>
+>>>>>>> 1609446 (Update README.md)
