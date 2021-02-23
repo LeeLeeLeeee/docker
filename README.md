@@ -1,7 +1,9 @@
-<<<<<<< HEAD
+
 # 도커 컴포즈 설정을 위한 파이썬/Django 샘플 프로젝트
 
-### 요약
+참고 사이트 : https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose
+
+### 샘플 프로젝트 실행 요약
 
 ```
 $ git clone https://github.com/raccoonyy/django-sample-for-docker-compose.git
@@ -9,41 +11,31 @@ $ cd django-sample-for-docker-compose
 $ docker-compose up
 ```
 
-### 요구조건
+## Docker Image, Container
 
-- 도커 엔진 : 1.12.0 이상
-- 도커 컴포즈 : 1.6.0 이상
+### Image 
+ - 하나의 구성 환경의 스냅샷을 찍는 것. 찰칵! 🎞
+ - docker build
+ #### docker build 옵션 정리
+ ```
+    -t
+ ```
+### 컨테이너
+ - 독립적으로 실행 환경을 구성해주는 것 독립성 확보
+ - docker run
+#### docker run 옵션 정리
+ ```
+    --rm
+    -it
+    -e
+    --name
+    -p
+    --link
+    --volume
+ ```
 
-### 실행
+ ## Docker File 이란?
 
-1. 저장소 클론
 
-```
-$ git clone https://github.com/raccoonyy/django-sample-for-docker-compose.git
-```
+ ## Docker-compose 란?
 
-2. 소스 디렉터리로 이동
-
-```
-$ cd django-sample-for-docker-compose
-```
-
-3. 컴포즈로 서비스 실행
-
-```
-$ docker-compose up
-```
-
-### 도커 컴포즈 구성
-
-- docker-compose.yml
-
-도커 컴포즈 명령(`docker-compose`) 실행시 참고하는 설정 모음
-
-- compose/django/Dockerfile-dev
-
-개발용 컨테이너를 만들기 위한 Dockerfile (배포용 Dockerfile과 살짝 다름)
-=======
-# docker
-<span style='color:red'>`docker education`</span>
->>>>>>> 1609446 (Update README.md)
